@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #6686af;
+}
+.card {
+  border-radius: 12px;
+}
+.form-label {
+  font-weight: 600;
+  color: #333;
+}
+#cedula[readonly] {
+  background: #f1f1f1;
+  font-weight: 600;
+  text-align: center;
+}
+
+.btn-primary {
+  border-radius: 20px;
+  background: #27375c;
+  border: none;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.4s;
+
+}
+.btn-primary:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+  color: #27375c;
+}
+
+select:disabled {
+  background: #eee;
+  color: #888;
+}
+select:disabled option {
+  color: #888;
+}
+/* Reset y tipografía */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #8e2424;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #a5b4d6;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Títulos */
+h1, h2 {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+/* Etiquetas */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 15px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+
+
+/* Botón */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #9ea7af;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.5s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #a3000e;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Mensajes de error */
+.error {
+  color: #d32f2f;
+  font-size: 13px;
+  margin-top: -12px;
+  margin-bottom: 12px;
+}
+
+/* Mensajes de éxito */
+.success {
+  color: #00BFA6;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+/* Logo y título (añádelo a styles.css) */
+.title-row { /* ya usa utilidades Bootstrap, este selector es extra para seguridad */
+  width: 100%;
+}
+
+/* Tamaño del logo */
+.app-logo {
+  height: 74px;        /* ajusta altura deseada */
+  width: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 6px;  /* opcional */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Título */
+.app-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #27375c;     /* tu color principal (cámbialo si quieres) */
+}
+
+/* Ajustes responsive para móviles */
+@media (max-width: 576px) {
+  .app-logo { height: 74px; }
+  .app-title { font-size: 1.7rem; }
+  .title-row { gap: .5rem; }
+}
+
+/* Si quieres que el logo sea clicable y lleve a home */
+.app-logo-link { display:inline-flex; align-items:center; gap:.5rem; text-decoration:none; }
+
+
